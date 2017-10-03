@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(integer)
-  array = [0..max]
+  array = (0..max).to_a
   array[0] = array[1] = nil
 
     i = 0
@@ -11,6 +11,6 @@ def prime?(integer)
     counter+=1
     (p*p).step(max,p) { |m| array[m] = nil}
   end
-    
-  
+
+
 end
