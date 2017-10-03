@@ -5,7 +5,7 @@ def prime?(integer)
 
     i = 0
   array.each do |p|
-    if p * p > max
+    if (p*p) > max
       break
     end
     counter+=1
