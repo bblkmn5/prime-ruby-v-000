@@ -5,11 +5,11 @@ def prime?(integer)
 
     i = 0
   array.each do |p|
-    if (p*p) > max
+    if (p*p) > integer
       break
     end
     counter+=1
-    (p*p).step(max,p) { |m| array[m] = nil}
+    (p*p).step(integer,p) { |m| array[m] = nil}
   end
 
 
