@@ -7,8 +7,8 @@ def prime?(integer)
     next unless p
     if (p*p) > integer
       break
+    end
     i+=1
     (p*p).step(integer,p) { |m| array[m] = nil}
   end
-end
 end
