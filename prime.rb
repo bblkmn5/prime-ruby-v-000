@@ -9,6 +9,5 @@ def prime?(integer)
     i+=1
     (p*p).step(integer,p) { |m| array[m] = nil}
   end
-
-
+end
 end
