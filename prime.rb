@@ -4,4 +4,3 @@ def prime?(num)
   number = array.find { |x| num % x == 0}
   !number
 end
-end
