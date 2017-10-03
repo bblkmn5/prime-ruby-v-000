@@ -5,9 +5,7 @@ def prime?(integer)
   i = 0
   array.each do |p|
     next unless p
-    if (p*p) > integer
-      break
-    end
+    break if (p*p) > integer
     i+=1
     (p*p).step(integer,p) { |m| array[m] = nil}
   end
