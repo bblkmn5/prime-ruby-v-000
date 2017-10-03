@@ -4,6 +4,7 @@ def prime?(integer)
   array[0] = array[1] = nil
   i = 0
   array.each do |p|
+    next unless p
     if (p*p) > integer
       break
     i+=1
